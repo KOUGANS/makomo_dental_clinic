@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>医院紹介 - まこと歯科</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">まこと歯科</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">医院紹介</a></li>
+      <li><a href="recruit.html">求人情報</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>医院紹介</h1>
+  </header>
+
+  <section>
+    <h2>院長からのごあいさつ</h2>
+    <p>院長〇〇です。地域に根ざした歯科医療を提供しています。</p>
+  </section>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

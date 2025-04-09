@@ -1,0 +1,121 @@
+
+body {
+  font-family: "Yu Gothic", sans-serif;
+  background: linear-gradient(to bottom, #f8f5f0, #e6e2dd);
+  color: #333;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c3047;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.menu-toggle {
+  display: block;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #0c3047;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.nav-links.active {
+  display: flex;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header {
+  background-color: #073b59;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.menu-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.item {
+  background-color: #0c3047;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.reserve-button {
+  display: inline-block;
+  background-color: #0c3047;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}

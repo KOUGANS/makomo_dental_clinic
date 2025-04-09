@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>まこと歯科医院</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">まこと歯科</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>	
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">ホーム</a></li>
+      <li><a href="about.html">医院紹介</a></li>
+      <li><a href="recruit.html">求人情報</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>まこと歯科医院</h1>
+    <p>地域に寄り添う、やさしい歯医者さん</p>
+    <img src="img/tooth.png" width="200">
+  </header>
+
+  <section>
+    <h2>ごあいさつ</h2>
+    <p>皆さまの笑顔と健康を守るため、誠実な診療を心がけております。</p>
+  </section>
+
+  <section>
+    <h2>診療科目</h2>
+    <div class="menu-box">
+      <div class="item">一般歯科</div>
+      <div class="item">小児歯科</div>
+      <div class="item">矯正歯科</div>
+      <div class="item">予防歯科</div>
+      <div class="item">審美歯科</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>診療科目</h2>
+    <div class="menu-box">
+      <div class="item">一般歯科</div>
+      <div class="item">小児歯科</div>
+      <div class="item">矯正歯科</div>
+      <div class="item">口腔外科</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>アクセス・診療時間</h2>
+    <p>〒891-0109<br>鹿児島県鹿児島市 清和３丁目６−３４</p>
+    <p>最寄駅：〇〇駅 徒歩3分<br>駐車場あり</p>
+    <table>
+      <thead>
+        <tr><th>曜日</th><th>午前</th><th>午後</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>月〜土</td><td>9:00〜13:00</td><td>14:00〜18:30</td></tr>
+        <tr><td>土曜</td><td>9:00〜13:00</td><td>14:00～17:00</td></tr>
+        <tr><td>日・祝</td><td>休診</td><td>休診</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>ご予約・お問い合わせ</h2>
+    <a class="reserve-button" href="#">▶ 予約はこちら</a>
+  </section>
+
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const links = document.getElementById("nav-links");
+    toggle.addEventListener("click", () => {
+      links.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
